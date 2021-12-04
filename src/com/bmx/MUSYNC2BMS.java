@@ -19,7 +19,6 @@ public class MUSYNC2BMS {
             path = path.substring(0, i);
             MusyncRead.read(file);
             MusyncWrite.write(path);
-        System.out.println("successful");
         //}
     }
 }
