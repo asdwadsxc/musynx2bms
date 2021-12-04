@@ -12,4 +12,4 @@
 Java -jar "jar file" "file"
 ```
 - Please use ".txt" file
-- You can edit the "run.bat" file to quick use.
+- You can edit the "run.bat" file to quick use
