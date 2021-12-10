@@ -76,17 +76,18 @@ public class MusyncWriteChart {
         return Beat.arrangePatternLn(longList);
     }
 
-    private static void getBeatLine(List<String[]> longList, String[] longNote) {
-        Integer longNoteTime = Integer.valueOf(longNote[1]);
+    //获取节拍
+    private static void getBeatLine(List<String[]> List, String[] Note) {
+        Integer NoteTime = Integer.valueOf(Note[1]);
         for (int j = 0; j < MusyncReadChart.beatLineList.size(); j++) {
             String[] beatLine = MusyncReadChart.beatLineList.get(j);
             Integer beatStart = Integer.valueOf(beatLine[1]);
             Integer beatEnd = Integer.valueOf(beatLine[4]);
-            if ((longNoteTime >= beatStart) && (longNoteTime < beatEnd)) {
+            if ((NoteTime >= beatStart) && (NoteTime < beatEnd)) {
                 String beat = beatLine[2];
-                String time = String.valueOf(Integer.valueOf(longNoteTime) - beatStart);
+                String time = String.valueOf(Integer.valueOf(NoteTime) - beatStart);
                 String[] beat1 = Beat.beat(time);
-                longList.add(new String[]{beat, beat1[0], beat1[1], longNote[3], longNote[2]});
+                List.add(new String[]{beat, beat1[0], beat1[1], Note[3], Note[2]});
             }
         }
     }

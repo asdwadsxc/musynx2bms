@@ -30,6 +30,13 @@ public class MusyncReadChart {
         wavList.add(split);
     }
 
+    //bpm
+    static List<String[]> bpmList = new ArrayList<>();
+
+    public static void bpm(String[] split) {
+        bpmList.add(split);
+    }
+
     //背景音乐note
     static List<String[]> bgmList = new ArrayList<>();
 
