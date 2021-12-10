@@ -24,8 +24,6 @@ public class MusyncRead {
                 MusyncReadChart.head(split);
             } else if ("WAV".equals(split[0])) {
                 MusyncReadChart.sound(split);
-            } else if ("BPMChanger".equals(split[0])) {
-                MusyncReadChart.bpm(split);
             } else if ("MusicNote".equals(split[0])) {
                 MusyncReadChart.music(split);
             } else if ("Note".equals(split[0])) {

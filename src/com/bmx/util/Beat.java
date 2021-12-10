@@ -15,8 +15,6 @@ public class Beat {
 
     //节拍计算
     public static String[] beat(String string) {
-        double origin = (60 * 1000) / Double.valueOf(MusyncReadChart.bpm);
-
         double v = (Double.valueOf(string) * 0.0001) / ((60 * 1000) / Double.valueOf(MusyncReadChart.bpm)) / 4;
         NumberFormat nf = NumberFormat.getNumberInstance();
         nf.setMaximumFractionDigits(5);
