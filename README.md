@@ -1,14 +1,5 @@
 # MUSYNX2BMS
 
 ### Introduction
-- A tool that can convert musynx chart into BMS
+This project has been moved to [MUGChartConverter](https://github.com/asdwadsxc/MUGChartConverter)
 
-### Requirement
-- JDK 9 and above
-
-### How to use
-
-```
--jar "jar file" "file"
-```
-- You can edit the "run.bat" file to quick use
